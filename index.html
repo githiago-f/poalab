@@ -6,13 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Home - PoaLAB</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
   <meta name="description" content="Landing page of PoaLAB" />
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
   <main>
-    <header>
-      <nav></nav>
+    <header class="menu container">
+      <div class="menu-button-container">
+        <h1 class="logo inline f-align-center">
+          <img src="./assets/img/logo.webp" class="logo" alt="Logo do PoaLAB" />
+          PoaLAB
+        </h1>
+        <div onclick="toggleModal()" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre o POALAB</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#equipamentos">Equipamentos</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="container banner">
       <div class="justify-center" style="flex-direction: column;">
@@ -37,5 +57,6 @@
 
     </footer>
   </main>
+  <script src="./assets/js/menu.js"></script>
 </body>
 </html>
