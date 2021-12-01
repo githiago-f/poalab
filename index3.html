@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" xml:lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Home - PoaLAB</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/w3.css" />
+  <meta name="description" content="Landing page of PoaLAB" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <script src="/assets/js/form.js"></script>
+</head>
+<body style="background-color: #BE0000;">
+  <main>
+    <header>
+      <nav></nav>
+    </header>
+    <section class="container">
+      <h2> Formulário de Reserva</h2>
+      <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <h4>Nome do Equipamento</h4>
+        <select id="name" class="w3-input w3-padding-16 w3-border" onchange="showEquipament()" name="equip">
+            <option value=""></option>
+            <option value="Impressora 3D Wanhao">Impressora 3D Wanhao</option>
+            <option value="Impressora 3D PrintrBot">Impressora 3D PrintrBot</option>
+            <option value="Cortadora Laser">Cortadora Laser</option>
+            <option value="Plotter de Recorte">Plotter de Recorte</option>
+            <option value="Fresadora">Fresadora MTC</option>
+            <option value="Extrusora Filabot">Extrusora de filamento Filabot Wee</option>
+            <option value="Plotter de Impressão">Plotter de Impressão</option>
+            <option value="Bancada de Eletrônica">Bancada de Eletrônica</option>
+        </select>
+        </select>
+
+        <p class="w3-input w3-padding-16 w3-border" id="desc"> 
+
+        </p>
+
+        <!-- <p><input id="equip" class="w3-input w3-padding-16 w3-border multiline" type="text" placeholder="Descrição do Equipamento" name="desc"></p> -->
+        <!-- <img title="Wanhao" alt="impressora 3D" width="230" src="./POALAB - Fab Lab Homepage_files/wanhao.png"> -->
+        
+        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Data" name="data"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="time" placeholder="Horário de Reserva" name="horarioinicio"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="time" placeholder="Horário de Reserva" name="horariofim"></p>
+        <button class="w3-button w3-black w3-padding-large" type="button" onclick="validateForm()">Enviar</button>
+        <button class="w3-button w3-black w3-padding-large" type="button" onclick="clearForm()">Limpar</button>
+      </form>
+    </section>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+</html>
