@@ -1,0 +1,10 @@
+.text-center { text-align: center; }
+.bg-blue { background-color: var(--saphire); }
+.bg-white { background-color: #fff; }
+.text-black { color: #525252; }
+.text-white { color: #fff; }
+.text-secondary { color: #525252; }
+
+.text-larger { font-size: 3rem; }
+.text-large { font-size: 1.4rem; }
+.text-md { font-size: 2rem;}

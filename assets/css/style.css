@@ -36,14 +36,6 @@ p{margin-top:0;margin-bottom:1rem}
   position: relative;
 }
 
-.text-larger {
-  font-size: 3rem;
-}
-
-.text-secondary {
-  color: #525252;
-}
-
 .inline {
   display: flex;
   flex-direction: row;
@@ -59,17 +51,20 @@ p{margin-top:0;margin-bottom:1rem}
   justify-content: center;
 }
 
-.call-to-action {
+.btn {
   border-radius: 5px;
-  padding: 5px 15px;
-  font-size: 1.5rem;
+  padding: 5px 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-decoration: none;
-  background-color: var(--saphire);
   width: fit-content;
-  color: #fff;
   box-shadow: 1px 1px 4px #525252;
   margin: 15px 0;
 }
+
+.py-5 { padding: 5rem 0; }
+.mb-3 { margin-bottom: 3rem; }
+.mt-3 { margin-bottom: 3rem; }
 
 @media screen and (max-width: 1400px) {
   .container {
@@ -102,6 +97,6 @@ p{margin-top:0;margin-bottom:1rem}
 
 @media screen and (max-width: 576px) {
   .container {
-    width: 100%;
+    width: 95%;
   }
 }

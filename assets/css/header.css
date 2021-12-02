@@ -1,6 +1,9 @@
 header.menu { 
   min-height: 2.5rem;
   padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1.logo {
@@ -16,12 +19,6 @@ img.logo {
 
 .logo-label {
   color: var(--saphire);
-}
-
-header.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 header.menu nav ul {
@@ -61,7 +58,6 @@ header.menu nav ul li a {
   }
   header.menu nav {
     display: none;
-    background-color: rgb(236, 236, 236);
   }
   header.menu nav ul {
     list-style: none;
