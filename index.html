@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/header.css" />
   <link rel="stylesheet" href="./assets/css/font.css" />
+  <link rel="stylesheet" href="./assets/css/bg.css" />
   <meta name="description" content="Landing page of PoaLAB" />
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
@@ -28,19 +29,27 @@
       <nav>
         <ul>
           <li><a href="#sobre">Sobre o POALAB</a></li>
-          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#equipamentos">Equipamentos</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#equipe">Equipe</a></li>
           <li><a href="#links">Links</a></li>
         </ul>
       </nav>
     </header>
-    <section class="container banner"></section>
+    <section class="container banner py-5">
+      <div class="py-5">
+        <h1 class="text-larger mb-3">ESTAMOS DE MUDANÇA!</h1>
+        <p class="text-large">
+          Em breve estaremos atendendo em uma nova sala no IFRS campus Porto Alegre.<br />
+          Enquanto preparamos o novo espaço, aproveite para conhecer nossos (XXXX)
+        </p>
+      </div>
+    </section>
     <section id="sobre" class="bg-blue py-5">
       <div class="container text-center">
         <div class="mb-3">
           <h2 class="text-white text-md">Sobre o POALAB</h2>
-          <div style="height: 7px; width: 10%; background-color: #fff; margin: auto;"></div>
+          <div class="divisor bg-white"></div>
         </div>
         <p class="text-white text-large" style="max-width: 553px; margin: 0 auto 3rem auto;">
           O <b>POALAB</b> é um laboratório de fabricação digital<br />
@@ -50,8 +59,37 @@
         <a class="btn text-black bg-white" href="#">Saiba mais sobre o LAB</a>
       </div>
     </section>
+    <section id="equipamentos" class="py-5">
+      <div class="container text-center">
+        <div class="mb-3">
+          <h2 class="text-md">Equipamentos</h2>
+          <div class="divisor bg-dark"></div>
+        </div>
+        <div class="three-cols">
+        </div>
+      </div>
+    </section>
+    <section id="open-day" class="py-5 bg-red">
+      <div class="container text-center two-cols">
+        <div>
+          <div class="mb-3">
+            <h2 class="text-md text-white">Open Day</h2>
+            <div class="divisor bg-white"></div>
+          </div>
+          <p class="text-large mb-3 text-right text-white" style="max-width: 615px;">
+            Os open days são um dos requisitos para a existência de um fab lab.
+            Nestes dias, a <b>comunidade externa</b> tem a possibilidade de
+            <b>conhecer as ferramentas</b> existentes no lab e aprender sobre <b>fabricação digital</b>.
+          </p>
+          <a href="#" class="btn text-black bg-white">Confira as regras Open Day</a>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/420x320" />
+        </div>
+      </div>
+    </section>
     <footer>
-
+      
     </footer>
   </main>
   <script src="./assets/js/menu.js"></script>

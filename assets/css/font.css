@@ -1,6 +1,6 @@
 .text-center { text-align: center; }
-.bg-blue { background-color: var(--saphire); }
-.bg-white { background-color: #fff; }
+.text-right {text-align: left;}
+
 .text-black { color: #525252; }
 .text-white { color: #fff; }
 .text-secondary { color: #525252; }
