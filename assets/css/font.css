@@ -8,3 +8,7 @@
 .text-larger { font-size: 3rem; }
 .text-large { font-size: 1.4rem; }
 .text-md { font-size: 2rem;}
+
+.shadow {
+  text-shadow: 3px 3px 3px #525252;
+}
