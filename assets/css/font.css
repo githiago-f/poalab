@@ -1,9 +1,10 @@
 .text-center { text-align: center; }
-.text-right {text-align: left;}
+.text-left {text-align: left;}
 
 .text-black { color: #525252; }
 .text-white { color: #fff; }
 .text-secondary { color: #525252; }
+.text-green { color: var(--ocean-green) }
 
 .text-larger { font-size: 3rem; }
 .text-large { font-size: 1.4rem; }
