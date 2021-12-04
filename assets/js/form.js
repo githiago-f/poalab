@@ -55,7 +55,7 @@ function showEquipament(){
     
     case "Impressora 3D Wanhao":
         var p = document.createElement("p");
-        var img = '<img src="/assets/img/wanhao.png" width="50%"  alt="Impressora 3D Wanhao" />';
+      var img = '<img src="/assets/img/wanhao.jpg" width="50%"  alt="Impressora 3D Wanhao" />';
         var l1 = "2 extrusores"; 
         var l2 = "Filamento 1.75mm";
         var l4 = "Área: 225mm x 145mm x 150mm";
@@ -67,7 +67,7 @@ function showEquipament(){
     
     case "Impressora 3D PrintrBot":
         var p = document.createElement("p");
-        var img = '<img src="/assets/img/printrbot.png" width="50%"  alt="Impressora 3D PrintrBot"/>';
+      var img = '<img src="/assets/img/printrbot.jpg" width="50%"  alt="Impressora 3D PrintrBot"/>';
         var l1 = "Filamento de 1.75mm"; 
         var l2 = "Resolução de camada entre 0.1 e 0.5mm"; 
         var l3 = "Área de trabalho: 152mm x 152mm x 152mm"; 
@@ -78,7 +78,7 @@ function showEquipament(){
 
     case "Cortadora Laser":
         var p = document.createElement("p");
-        var img = '<img src="/assets/img/Cortadora.png" width="50%"  alt="Cortadora Laser"/>';
+      var img = '<img src="/assets/img/Cortadora.jpg" width="50%"  alt="Cortadora Laser"/>';
         var l1 = "Área de corte de 60cm x 40cm"; 
         var l2 = "Potência do laser: 70-80W"; 
         var l3 = "Precisão &lt; 0.01mm"; 
@@ -90,7 +90,7 @@ function showEquipament(){
 
     case "Plotter de Recorte":
       var p = document.createElement("p");
-      var img = '<img src="/assets/img/plottersaga.png" width="50%"  alt="Plotter de Recorte"/>';
+      var img = '<img src="/assets/img/plottersaga.jpg" width="50%"  alt="Plotter de Recorte"/>';
       var l1 = "Largura máxima da mídia: 72cm"; 
       var l2 = "Largura máxima de corte: 62cm"; 
       var l3 = "Laser point"; 
@@ -103,7 +103,7 @@ function showEquipament(){
 
     case "Fresadora":
       var p = document.createElement("p");
-      var img = '<img src="/assets/img/fresa1.png" width="50%"  alt="Fresadora"/>';
+      var img = '<img src="/assets/img/fresa1.jpg" width="50%"  alt="Fresadora"/>';
       var l1 = "Área: 200mm x 250mm"; 
       var l2 = "Eixo z: 150mm"; 
       var l3 = "Refrigeração do motor a ar"; 
@@ -115,7 +115,7 @@ function showEquipament(){
 
     case "Extrusora Filabot":
       var p = document.createElement("p");
-      var img = '<img src="/assets/img/Extrusora.png" width="50%"  alt="Extrusora Filabot"/>';
+      var img = '<img src="/assets/img/Extrusora.jpg" width="50%"  alt="Extrusora Filabot"/>';
       var l1 = "Bico de extrusão de 1.75mm"; 
       var l2 = "Adequado para ABS e PLA"; 
       var l3 = "Taxa de extrusão entre 13 e 51 cm/minuto"; 
@@ -126,7 +126,7 @@ function showEquipament(){
 
     case "Plotter de Impressão":
       var p = document.createElement("p");
-      var img = '<img src="/assets/img/plotterhp.png" width="50%"  alt="Plotter de Impressão"/>';
+      var img = '<img src="/assets/img/plotterhp.jpg" width="50%"  alt="Plotter de Impressão"/>';
       var l1 = "Alimentação por rolo ou folha"; 
       var l2 = "Largura de impressão: 61cm"; 
       var l3 = "Espessura: até 11.8 milésimos de polegada"; 
@@ -138,7 +138,7 @@ function showEquipament(){
 
     case "Bancada de Eletrônica":
       var p = document.createElement("p");
-      var img = '<img src="/assets/img/bancada.png" width="50%"  alt="Bancada de Eletrônica"/>';
+      var img = '<img src="/assets/img/bancada.jpg" width="50%"  alt="Bancada de Eletrônica"/>';
       var l1 = "Osciloscópio"; 
       var l2 = "Fonte de bancada"; 
       var l3 = "Estação de solda"; 
