@@ -147,6 +147,10 @@ img {
     display: flex;
     flex-direction: column-reverse;
   }
+  .three-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -157,6 +161,10 @@ img {
     display: flex;
     flex-direction: column-reverse;
   }
+  .three-cols {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -164,6 +172,10 @@ img {
     width: 95%;
   }
   .two-cols {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .three-cols {
     display: flex;
     flex-direction: column-reverse;
   }
