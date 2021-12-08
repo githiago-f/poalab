@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./assets/css/header.css" />
   <link rel="stylesheet" href="./assets/css/font.css" />
   <link rel="stylesheet" href="./assets/css/bg.css" />
+  <link rel="stylesheet" href="./assets/css/banner.css" />
+  <link rel="stylesheet" href="./assets/css/tabs.css" />
   <meta name="description" content="Landing page of PoaLAB" />
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
@@ -37,10 +39,15 @@
       </nav>
     </header>
     <section class="banner py-5">
-      <div class="container py-5">
-        <div class="content">
-          <h1 class="text-larger mb-3 text-white shadow">ESTAMOS DE MUDANÇA!</h1>
-          <p class="text-large text-white" style="max-width: 500px;">
+      <div class="container py-5 content" style="height: 50vh;">
+        <div>
+          <h1 class="title text-white shadow">ESTAMOS DE MUDANÇA!</h1>
+        </div>
+        <div>
+          <div class="vertical-divide bg-white"></div>
+        </div>
+        <div>
+          <p class="text-large text-white">
             Em breve estaremos atendendo em uma nova sala no IFRS campus Porto Alegre.<br />
             Enquanto preparamos o novo espaço, aproveite para conhecer nossos (XXXX)
           </p>
@@ -48,47 +55,80 @@
       </div>
     </section>
     <section id="sobre" class="bg-blue py-5">
-      <div class="container text-center">
-        <div class="mb-3">
-          <h2 class="text-white text-md">Sobre o POALAB</h2>
-          <div class="divisor bg-white"></div>
+      <div class="container two-cols" style="column-gap: 2rem;">
+        <div>
+          <div class="mb-3">
+            <h2 class="text-white text-md">Sobre o POALAB</h2>
+            <div class="divisor bg-white"></div>
+          </div>
+          <p class="text-white text-large" style="max-width: 600px;">
+            O POALAB é um laboratório de fabricação digital e está conectado à rede mundial Fab Lab iniciada no Massachusetts
+            Institute of Technology (MIT), um dos centros de ciência e tecnologia mais importantes do mundo, localizado em
+            Massachusetts, nos Estados Unidos. Em 2016 o laboratório iniciou suas atividades como um programa de extensão do IFRS
+            – Campus Porto Alegre.<br />
+            Temos como missão popularizar o acesso e letramento na fabricação digital, funcionando como uma plataforma de
+            criatividade, aprendizagem e invenção.
+          </p>
         </div>
-        <p class="text-white text-large" style="max-width: 553px; margin: 0 auto 3rem auto;">
-          O <b>POALAB</b> é um laboratório de fabricação digital<br />
-          e está conectado à rede mundial de fab labs.<br />
-          Opera como um programa de extensão do IFRS campus Porto Alegre.
-        </p>
-        <a class="btn text-black bg-white" href="#">Saiba mais sobre o LAB</a>
+        <div>
+          <img src="https://via.placeholder.com/300x600" alt="Entrada PoaLAB" class="ignore-yp" style="height: 100%;" />
+        </div>
       </div>
     </section>
     <section id="equipamentos" class="py-5">
-      <div class="container text-center">
-        <div class="mb-3">
-          <h2 class="text-md">Destaques</h2>
-          <div class="divisor bg-dark"></div>
+      <div class="container">
+        <div class="mb-3 text-center">
+          <div class="mb-3">
+            <h2 class="text-md">Destaques</h2>
+            <div class="divisor mx-auto bg-dark"></div>
+            </div>
+          <p class="text-large">
+            O PoaLab conta com diversas máquinas e bancadas para propiciar a materialização de ideias e
+            prototipar produtos com
+            baixo custo e curto espaço de tempo.
+          </p>
         </div>
-        <div class="three-cols">
-          <div class="bg-white rounded drop-3">
-            <img src="https://via.placeholder.com/300x200" height="200" width="300" class="rounded-top" alt="Image" />
-            <div class="text-left p-2">
-              <h4 class="text-center text-green text-large mb-2">Projetos</h4>
-              <p>Confira os projetos já desenvolvidos e os projetos atuais POALABS.</p>
+
+        <div>
+          <div id="tabs">
+            <a href="#tab-id" class="tab-item active">Titulo do equipamento</a>
+            <a href="#tab-id" class="tab-item">Titulo do equipamento</a>
+            <a href="#tab-id" class="tab-item">Titulo do equipamento</a>
+            <a href="#tab-id" class="tab-item">Titulo do equipamento</a>
+            <a href="#tab-id" class="tab-item">Titulo do equipamento</a>
+            <a href="#tab-id" class="tab-item">Titulo do equipamento</a>
+            <a href="#tab-id" class="tab-item">Titulo do equipamento</a>
+            <a href="#tab-id" class="tab-item">Titulo do equipamento</a>
+          </div>
+          <div id="selected-card">
+            <div class="card-highlight two-cols">
+              <div style="max-width: 400px;">
+                <div class="mb-3">
+                  <h3 class="text-large text-red">Bancada Eletronica</h3>
+                  <div class="divisor bg-red"></div>
+                </div>
+                <p class="text-5">
+                  A bancada eletrônica é equipada com osciloscópio, fonte de bancada, estação de solda e componentes eletrônicos diversos.
+                  Não é necessário agendamento para a utilização.
+                </p>
+              </div>
+              <div style="text-align: center;">
+                <img src="https://via.placeholder.com/300x300" style="width: 300px; height: auto; object-fit: contain;" alt="Imagem do equipamento"/>
+              </div>
             </div>
           </div>
-          <div class="bg-white rounded drop-3">
-            <img src="https://via.placeholder.com/300x200" height="200" width="300" class="rounded-top" alt="Image" />
-            <div class="text-left p-2">
-              <h4 class="text-center text-green text-large mb-2">Equipe</h4>
-              <p>Nossa equipe conta com cerca de XX pessoas e é formada por professores, técnicos e alunos.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded drop-3">
-            <img src="https://via.placeholder.com/300x200" height="200" width="300" class="rounded-top" alt="Image" />
-            <div class="text-left p-2">
-              <h4 class="text-center text-green text-large mb-2">Equipamentos</h4>
-              <p>Nossa equipe conta com cerca de XX pessoas e é formada por professores, técnicos e alunos.</p>
-            </div>
-          </div>
+        </div>
+
+        <div class="equip-obs">
+          <p style="text-align: right;">
+            A comunidade acadêmica deve reservar horário por meio do aplicativo<br />
+            <a href="#" class="link">Nome do Projeto final IHC</a>.
+          </p>
+          <div class="vertical-divide bg-dark" style="max-height: 100%; width: .4rem;"></div>
+          <p>
+            A comunidade externa tem a possibilidade de conhecer as ferramentas existentes no lab e aprender sobre fabricação
+            digital no Open Day.
+          </p>
         </div>
       </div>
     </section>

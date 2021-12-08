@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+h1.title { 
+  font-size: 4rem; 
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .text-center { text-align: center; }
 .text-left {text-align: left;}
 
 .text-black { color: #525252; }
 .text-white { color: #fff; }
 .text-secondary { color: #525252; }
-.text-green { color: var(--ocean-green) }
+.text-green { color: var(--ocean-green); }
+.text-red { color: var(--chestnut-rose); }
 
 .text-larger { font-size: 3rem; }
-.text-large { font-size: 1.4rem; }
+.text-large { font-size: 1.5rem; }
 .text-md { font-size: 2rem;}
+.text-5 { font-size: 1.25rem; }
 
 .shadow {
   text-shadow: 3px 3px 3px #525252;

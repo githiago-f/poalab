@@ -1,0 +1,52 @@
+#equipamentos {
+  background-color: #E5E5E5;
+}
+
+#tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.tab-item {
+  padding: .75rem;
+  border-radius: var(--default-border-radius);
+  text-align: center;
+  color: var(--chestnut-rose);
+  font-weight: 600;
+  background-color: #F3F4F6;
+  box-shadow: 1px 1px var(--default-border-radius) rgba(0, 0, 0, 0.397);
+}
+
+.tab-item:is(:active, .active) {
+  background-color: var(--chestnut-rose);
+  color: #fff;
+}
+
+#selected-card {
+  padding: 3rem;
+}
+
+.card-highlight {
+  padding: 2rem;
+  background-color: #F3F4F6;
+  border-radius: var(--default-border-radius);
+  box-shadow: 1px 1px var(--default-border-radius) rgba(0, 0, 0, 0.397);
+}
+
+.card-highlight img {
+  border-radius: var(--default-border-radius);
+}
+
+@media screen and (max-width: 992px) {
+  #tabs { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 768px) {
+  #tabs { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 576px) {
+  #tabs { grid-template-columns: 1fr; }
+}
