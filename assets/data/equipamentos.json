@@ -1,50 +1,50 @@
 [
   {
     "title": "Bancada eletrônica",
-    "content": "",
-    "image": "",
+    "content": "Osciloscópio\n Fonte de bancada\n Estação de solda\n Componentes eletrônicos diversos",
+    "image": "/assets/img/bancada.jpg",
     "url": "#bancada-eletronica"
   },
   {
     "title": "Cortador Laser",
-    "content": "",
-    "image": "",
+    "content": "Área de corte de 60cm x 40cm\n Potência do laser: 70-80W\n Precisão &lt\n 0.01mm",
+    "image": "/assets/img/Cortadora.jpg",
     "url": "#cortador-laser"
   },
   {
     "title": "Extrusora de filamento",
-    "content": "",
-    "image": "",
+    "content": "Bico de extrusão de 1.75mm\n Adequado para ABS e PLA\n Taxa de extrusão entre 13 e 51 cm/minuto",
+    "image": "/assets/img/Extrusora.jpg",
     "url": "#extrusora-filamento"
   },
   {
     "title": "Fresadora",
-    "content": "",
-    "image": "",
+    "content": "Área: 200mm x 250mm\n Eixo z: 150mm\n Refrigeração do motor a ar\n Velocidade de rotação programável",
+    "image": "/assets/img/fresa1.jpg",
     "url": "#fresadora"
   },
   {
     "title": "Impressora 3D Wanhao",
-    "content": "",
-    "image": "",
+    "content": "2 extrusores\n Filamento 1.75mm\n Área: 225mm x 145mm x 150mm\n Base aquecida",
+    "image": "/assets/img/wanhao.jpg",
     "url": "#impressora-wanhao"
   },
   {
     "title": "Impressora 3D Printrbot",
-    "content": "",
-    "image": "",
+    "content": "Filamento de 1.75mm\n Resolução de camada entre 0.1 e 0.5mm\n Área de trabalho: 152mm x 152mm x 152mm\n",
+    "image": "/assets/img/printrbot.jpg",
     "url": "#impressora-printbot"
   },
   {
     "title": "Plotter de Impressão",
-    "content": "",
-    "image": "",
+    "content": "Alimentação por rolo ou folha\n Largura de impressão: 61cm\n Espessura: até 11.8 milésimos de polegada\n Resolução de impressão: 2400 x 1200 dpi",
+    "image": "/assets/img/plotterhp.jpg",
     "url": "#plotter-impressao"
   },
   {
     "title": "Plotter de recorte",
-    "content": "",
-    "image": "",
+    "content": "Largura máxima da mídia: 72cm\n Largura máxima de corte: 62cm\n Laser point\n Velocidade: 600mm\n Precisão de repetição: 0.082mm",
+    "image": "/assets/img/plottersaga.jpg",
     "url": "#plotter-recorte"
   }
 ]
