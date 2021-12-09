@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/css/bg.css" />
   <link rel="stylesheet" href="./assets/css/banner.css" />
   <link rel="stylesheet" href="./assets/css/tabs.css" />
+  <link rel="stylesheet" href="./assets/css/person-card.css" />
   <meta name="description" content="Landing page of PoaLAB" />
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
@@ -38,7 +39,7 @@
         </ul>
       </nav>
     </header>
-    <section class="banner py-5">
+    <section id="head" class="banner py-5">
       <div class="container py-5 content" style="height: 50vh;">
         <div>
           <h1 class="title text-white shadow">ESTAMOS DE MUDANÇA!</h1>
@@ -107,25 +108,37 @@
         </div>
       </div>
     </section>
-    <section id="open-day" class="py-5 bg-red">
+    <section id="equipe" id="open-day" class="py-5 bg-green">
       <div class="container">
-        <div class="mb-3">
-          <h2 class="text-md text-white">Equipe</h2>
-          <div class="divisor bg-white"></div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5">
-      <div class="container text-center">
-        <div>
+        <div style="max-width: 400px;">
           <div class="mb-3">
-            <h2 class="text-md text-white"></h2>
+            <h2 class="text-md text-white">Equipe</h2>
             <div class="divisor bg-white"></div>
+          </div>
+          <p class="text-large text-white">Nossa equipe conta com cerca de 15 pessoas e é formada por professores e alunos.</p>
+        </div>
+        <div style="display: flex;">
+          <div style="display: grid; max-width: 330px; grid-template-columns: .5fr 1.5fr; padding: 0.875rem 0;">
+            <div style="margin: auto 0;">
+              <img src="https://via.placeholder.com/120x120" alt="" style="border-radius: 50%; width: 120px;"/>
+            </div>
+            <div style="padding: 0.75rem; padding-left: 5rem; margin: auto 0; margin-left: -5rem; background-color: #fff; height: fit-content;">
+              <h4>André Peres</h4>
+              <p style="margin-bottom: 0;">
+                <small><b>Professor Coordenador</b></small><br/>
+                <small>andre.peres@ifpoa.com</small>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="py-5"></footer>
+    <a href="#head" class="back-to-top box-shadow">
+      <img src="./assets/img/arrows.png" alt="Voltar ao topo" style="width: 32px;" />
+    </a>
+    <footer class="py-5">
+      <div>Icons made by <a href="https://www.flaticon.com/authors/kirill-kazachek" title="Kirill Kazachek">Kirill Kazachek</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
   </main>
   <script src="./assets/js/menu.js"></script>
   <script src="./assets/js/tabs.js"></script>
