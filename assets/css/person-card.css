@@ -1,0 +1,42 @@
+.person-card-container {
+  display: flex;
+  column-gap: 0.75rem;
+  overflow-x: auto;
+}
+
+.person-card-container::-webkit-scrollbar {
+  height: 5px;
+}
+.person-card-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.person-card-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.person-card-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.person-card { 
+  display: grid;
+  max-width: 400px;
+  grid-template-columns: .5fr 1.5fr;
+  padding: 0.875rem 0;
+  position: relative;
+}
+.card-image {
+  border-radius: 50%;
+  width: 120px;
+  position: relative;
+  z-index: 5;
+}
+.card-body { 
+  padding: 0.75rem;
+  padding-left: calc(5rem + 0.75rem);
+  margin: auto 0;
+  margin-left: -5rem;
+  background-color: #fff;
+  height: fit-content;
+  width: max-content;
+  border-radius: 0 .375rem .375rem 0;
+}

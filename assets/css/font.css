@@ -6,19 +6,30 @@ h1.title {
   font-family: 'Montserrat', sans-serif;
 }
 
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .text-center { text-align: center; }
 .text-left {text-align: left;}
+.text-right { text-align: right; }
 
 .text-black { color: #525252; }
 .text-white { color: #fff; }
 .text-secondary { color: #525252; }
 .text-green { color: var(--ocean-green); }
 .text-red { color: var(--chestnut-rose); }
+.text-blue { color: var(--saphire); }
+.text-opaque { color: var(--opaque-blue); }
 
 .text-larger { font-size: 3rem; }
 .text-large { font-size: 1.5rem; }
 .text-md { font-size: 2rem;}
 .text-5 { font-size: 1.25rem; }
+.text-4 { font-size: 1rem; }
+.uppercase {
+  text-transform: uppercase;
+}
 
 .shadow {
   text-shadow: 3px 3px 3px #525252;

@@ -33,8 +33,8 @@
         <ul>
           <li><a href="#sobre">Sobre o POALAB</a></li>
           <li><a href="#equipamentos">Equipamentos</a></li>
-          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#eventos">Eventos</a></li>
           <li><a href="#links">Links</a></li>
         </ul>
       </nav>
@@ -117,30 +117,77 @@
           </div>
           <p class="text-large text-white">Nossa equipe conta com cerca de 15 pessoas e é formada por professores e alunos.</p>
         </div>
-        <div style="display: flex;">
-          <div style="display: grid; max-width: 330px; grid-template-columns: .5fr 1.5fr; padding: 0.875rem 0;">
-            <div style="margin: auto 0;">
-              <img src="https://via.placeholder.com/120x120" alt="" style="border-radius: 50%; width: 120px;"/>
-            </div>
-            <div style="padding: 0.75rem; padding-left: 5rem; margin: auto 0; margin-left: -5rem; background-color: #fff; height: fit-content;">
-              <h4>André Peres</h4>
-              <p style="margin-bottom: 0;">
-                <small><b>Professor Coordenador</b></small><br/>
-                <small>andre.peres@ifpoa.com</small>
-              </p>
-            </div>
+        <div class="person-card-container" id="cards"></div>
+      </div>
+    </section>
+    <section id="eventos" id="open-day" class="py-5 bg-blue">
+      <div class="container">
+        <div class="text-center">
+          <div class="mb-3">
+            <h2 class="text-md text-white">Eventos</h2>
+            <div class="divisor mx-auto bg-white"></div>
+          </div>
+          <p class="text-large text-white">Confira os próximos eventos e workshops.</p>
+        </div>
+        <div class="three-cols mb-3" id="events"></div>
+        <div class="two-cols f-align-center mb-3" style="flex-direction: column;">
+          <h2 class="text-larger montserrat text-white uppercase" style="max-width: 11rem;">Open days</h2>
+          <p class="text-white text-large" style="margin-bottom: 0;">
+            Toda semana às <b>sextas-feiras</b> o PoaLab abre as portas para que visitantes e makers possam desenvolver seus projetos, 
+            trabalhar nas nossas bancadas e receber ajuda dos nossos mentores gratuitamente! São os "Open Days"! Confira as regras: 
+          </p>
+        </div>
+        <div style="max-width: 900px;" class="mx-auto mb-3">
+          <div class="f-align-center col-gap-4">
+            <h3 class="text-larger montserrat text-opaque uppercase">1</h3>
+            <p class="text-white text-large text-left">Não existe custo para acessar o lab ou utilizar as máquinas;</p>
+          </div>
+          <div class="f-align-center col-gap-4">
+            <h3 class="text-larger montserrat text-opaque uppercase">2</h3>
+            <p class="text-white text-large text-left">Não é possível reservar equipamentos neste dia;</p>
+          </div>
+          <div class="f-align-center col-gap-4">
+            <h3 class="text-larger montserrat text-opaque uppercase">3</h3>
+            <p class="text-white text-large text-left">
+              Os usuários são convidados a cadastrar os seus projetos no sistema 
+              de projetos do PoaLab para compartilhamento com a comunidade;
+            </p>
+          </div>
+          <div class="f-align-center col-gap-4">
+            <h3 class="text-larger montserrat text-opaque uppercase">4</h3>
+            <p class="text-white text-large text-left">Os usuários devem trazer os insumos necessários</p>
           </div>
         </div>
+        <div>
+          <p class="text-white text-large text-center">
+            O objetivo do lab é o de disseminar conhecimento, se você não tem nenhum conhecimento sobre fabricação digital, 
+            o lab foi feito pra você!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="entre-em-contato" class="py-5 bg-red">
+      <div class="mb-3 text-center">
+        <h2 class="text-md text-white">Fale conosco</h2>
+        <div class="divisor mx-auto bg-white"></div>
+      </div>
+      <div>
+        
       </div>
     </section>
     <a href="#head" class="back-to-top box-shadow">
       <img src="./assets/img/arrows.png" alt="Voltar ao topo" style="width: 32px;" />
     </a>
-    <footer class="py-5">
-      <div>Icons made by <a href="https://www.flaticon.com/authors/kirill-kazachek" title="Kirill Kazachek">Kirill Kazachek</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <footer class="py-5 container">
+      <div style="display: flex; align-items: center; column-gap: .75rem;">
+        <img src="./assets/img/ifrs.svg" style="width: 64px;" alt="Logo IFRS" />
+        <div>Icons made by <a href="https://www.flaticon.com/authors/kirill-kazachek" title="Kirill Kazachek">Kirill Kazachek</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </div>
     </footer>
   </main>
   <script src="./assets/js/menu.js"></script>
   <script src="./assets/js/tabs.js"></script>
+  <script src="./assets/js/person-card.js"></script>
+  <script src="./assets/js/events.js"></script>
 </body>
 </html>
