@@ -97,6 +97,10 @@ img {
 .rounded-top { border-radius: var(--default-border-radius) var(--default-border-radius) 0 0; }
 .drop-3 { box-shadow: 0 .3rem 1rem #525252; }
 .col-gap-4 { column-gap: 1rem; }
+.border-red {
+  border: .5px solid var(--chestnut-rose);
+  padding: 0.625rem 1.25rem;
+}
 
 .two-cols {
   display: grid;
@@ -131,6 +135,18 @@ img {
   background-color: var(--saphire);
   padding: 0.75rem;
   border-radius: 0.75rem;
+}
+
+input:is([type=text], [type=tel], [type=email]), textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.625rem;
+  border: none;
+
+  background: #F9F9F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 1400px) {
