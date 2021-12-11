@@ -179,7 +179,7 @@
         <div class="two-cols">
           <div style="max-width: 500px;">
             <p class="text-white text-large">Encaminhe suas dúvidas, críticas ou sugestões.</p>
-            <form action="">
+            <form name="form" action="/action_page.php" onsubmit="return validateForm()" method="post">
               <input type="text" placeholder="Nome" name="nome" id="nome"/>
               <input type="email" placeholder="E-mail" name="email" id="email"/>
               <input type="tel" placeholder="Telefone" name="telefone" id="telefone"/>
@@ -209,5 +209,6 @@
   <script src="./assets/js/person-card.js"></script>
   <script src="./assets/js/events.js"></script>
   <script src="./assets/js/links.js"></script>
+  <script src="./assets/js/form.js"></script>
 </body>
 </html>
