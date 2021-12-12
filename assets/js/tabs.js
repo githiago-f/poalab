@@ -21,7 +21,7 @@ const cardTemplate = ({ content, image, title }) => `
       </p>
     </div>
     <div style="text-align: center;">
-      <img src="${image}" style="width: 300px; height: auto; object-fit: contain;" alt="${title}"/>
+      <img src="${image}" style="max-width: 300px; height: auto; object-fit: contain;" alt="${title}"/>
     </div>
   </div>
 `;
