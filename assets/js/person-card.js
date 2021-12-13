@@ -1,3 +1,4 @@
+'use strict';
 const template = ({ image, name, contact, role }) => `
   <div class="person-card">
     <div>
@@ -17,8 +18,8 @@ const containerCards = document.getElementById('cards');
 
 async function personCardMain() {
   const request = await fetch('./assets/data/equipe.json');
-  data = await request.json() || [];
-  containerCards.innerHTML = data.map(template).join('');
+  const myPersons = await request.json() || [];
+  containerCards.innerHTML = myPersons.map(template).join('');
 }
 
 personCardMain();

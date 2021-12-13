@@ -1,4 +1,5 @@
-var data = [];
+'use strict';
+let data = [];
 
 const tabItem = ({ title }, index) => `
   <a 
@@ -30,6 +31,9 @@ const tabContainer = document.getElementById('tabs');
 const cardSelected = document.getElementById('selected-card');
 
 function showTab(id) {
+  if (!data || data.length < 1) {
+    throw new Error('Dados não encontrados!');
+  }
   const tab = `tab_${id}`;
   const template = cardTemplate(data[id]);
   cardSelected.innerHTML = template;

@@ -1,3 +1,4 @@
+'use strict';
 const eventTemplate = ({ title, day, month, body, image }) => `
   <div class="bg-white rounded drop-3">
     <img src="${image}" height="200" width="300" class="rounded-top" alt="Image" />
@@ -18,8 +19,8 @@ const conteinerEvents = document.getElementById('events');
 
 async function eventsCardMain() {
   const request = await fetch('./assets/data/eventos.json');
-  data = await request.json() || [];
-  conteinerEvents.innerHTML = data.map(eventTemplate).join('');
+  const myEvents = await request.json() || [];
+  conteinerEvents.innerHTML = myEvents.map(eventTemplate).join('');
 }
 
 eventsCardMain();

@@ -29,5 +29,5 @@ function validateForm() {
 }   
 
 function clearForm() {
- document.forms["form"].reset(); 
+  document.forms["form"].reset();
 }
