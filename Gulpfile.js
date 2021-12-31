@@ -7,8 +7,8 @@ import minifyCss from 'gulp-clean-css';
 import cleanHtml from 'gulp-cleanhtml';
 import imagemin from 'gulp-imagemin';
 import gulpIf from 'gulp-if';
-import gulpCopy from 'gulp-copy';
 import minifyJSON from 'gulp-json-minify';
+import inlineSource from 'gulp-inline-source';
 
 const { src, dest, task, series } = gulp;
 
@@ -17,6 +17,9 @@ function html() {
     .pipe(minify())
     .pipe(useref())
     .pipe(cleanHtml())
+    .pipe(
+      gulpIf('*.html', inlineSource())
+    )
     .pipe(
       gulpIf('*.js', minify().pipe(uglify()))
     )
@@ -40,7 +43,7 @@ function css() {
 }
 
 function image() {
-  return src('assets/img/*')
+  return src('assets/img/**')
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [
