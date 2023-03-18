@@ -26,20 +26,20 @@ function html() {
     .pipe(
       gulpIf('*.css', minifyCss())
     )
-    .pipe(dest('dest/'));
+    .pipe(dest('dist/'));
 }
 
 function script() {
   return src('assets/js/*.js')
     .pipe(uglify())
     .pipe(minify())
-    .pipe(dest('dest/js/bundle.js'));
+    .pipe(dest('dist/js/bundle.js'));
 }
 
 function css() {
   return src('assets/css/*.css')
     .pipe(minifyCss())
-    .pipe(dest('dest/css/bundle.css'));
+    .pipe(dest('dist/css/bundle.css'));
 }
 
 function image() {
@@ -51,17 +51,17 @@ function image() {
         { cleanupIDs: false }
       ]
     }))
-    .pipe(dest('dest/assets/img'));
+    .pipe(dest('dist/assets/img'));
 }
 
 function copyData() {
   return src('assets/data/*')
     .pipe(minifyJSON())
-    .pipe(dest('dest/assets/data'));
+    .pipe(dest('dist/assets/data'));
 }
 
 function clean() {
-  return src('dest', { read: false, allowEmpty: true })
+  return src('dist', { read: false, allowEmpty: true })
     .pipe(cleanAll());
 }
 
